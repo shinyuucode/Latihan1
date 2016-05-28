@@ -7,4 +7,10 @@
     <color name="text1">#FFFFFF</color>
     <color name="background">#26A69A</color>
 
+    <color name="backgroundClicked">#26A69A</color>
+    <color name="textClicked">#FFFFFF</color>
+
+    <color name="backgroundUnClicked">#FFFFFF</color>
+    <color name="textUnClicked">#26A69A</color>
+
 </resources>

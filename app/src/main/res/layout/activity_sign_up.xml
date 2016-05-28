@@ -26,39 +26,51 @@
             android:layout_marginBottom="50dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/background"
+                android:background="@color/backgroundClicked"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/kotakDosen"
                 >
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
                     android:text="@string/dosen"
                     android:onClick="userDosen"
                     android:id="@+id/pilihdosen"
-                    android:textSize="30sp"
-                    android:textColor="@color/text1"
-                    android:textStyle="bold"/>
+                    android:textSize="20sp"
+                    android:textColor="@color/textClicked"
+                    android:textStyle="bold"
+                    android:ems="5"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/text1">
+                android:background="@color/backgroundUnClicked"
+                android:padding="5dp"
+                android:id="@+id/kotakMahasiswa"
+                >
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
                     android:text="@string/mahasiswa"
                     android:onClick="userMhs"
                     android:id="@+id/pilihmhs"
-                    android:textSize="30sp"
-                    android:textColor="@color/background"
-                    android:textStyle="bold"/>
+                    android:textSize="20sp"
+                    android:textColor="@color/textUnClicked"
+                    android:textStyle="bold"
+                    android:ems="5"
+                    />
 
             </LinearLayout>
 
@@ -105,7 +117,7 @@
             android:text="@string/sign_up"
             android:id="@+id/signup"
             android:layout_weight="1"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="50dp"
             android:onClick="SignUp"/>
 
