@@ -12,5 +12,5 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chii <3 Cenpai" />
+        android:text="@string/chii_3_cenpai" />
 </RelativeLayout>
