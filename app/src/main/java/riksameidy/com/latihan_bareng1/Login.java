@@ -20,6 +20,12 @@ public class Login extends AppCompatActivity {
 
     public void klikLogin(View view) {
 
+        Intent intent = new Intent(this,MenuDosen.class);
+        startActivity(intent);
+        finish();
+        return;
+
+
     }
 
     public void klikSignUp(View view) {
