@@ -29,14 +29,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/background">
+                android:background="@color/background"
+                >
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dosen"
                     android:onClick="userDosen"
-                    android:id="@+id/pilihdosen"/>
+                    android:id="@+id/pilihdosen"
+                    android:textSize="30sp"
+                    android:textColor="@color/text1"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
@@ -46,12 +50,15 @@
                 android:orientation="horizontal"
                 android:background="@color/text1">
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/mahasiswa"
                     android:onClick="userMhs"
-                    android:id="@+id/pilihmhs"/>
+                    android:id="@+id/pilihmhs"
+                    android:textSize="30sp"
+                    android:textColor="@color/background"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 

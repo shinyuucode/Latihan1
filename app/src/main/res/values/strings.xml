@@ -13,4 +13,8 @@
     <string name="email">E-mail</string>
     <string name="dosen">Dosen</string>
     <string name="mahasiswa">Mahasiswa</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="add_class">Add Class</string>
+    <string name="choose_class">Choose Class</string>
 </resources>
