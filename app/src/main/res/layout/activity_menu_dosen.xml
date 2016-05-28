@@ -15,11 +15,20 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_dosen"
+            android:textSize="45sp"
+            android:textColor="@color/text"
+            android:textStyle="bold"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -34,13 +43,79 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/profilhijau"
                     android:id="@+id/editprofil"
-                    android:onClick="editprofil"/>
+                    android:onClick="editprofil"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/edit_profile"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logouthijau"
+                    android:id="@+id/logout"
+                    android:onClick="logout"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addhijau"
+                    android:id="@+id/addkelas"
+                    android:onClick="addkelas"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_class"
+                    android:textSize="25sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/text"/>
 
@@ -59,74 +134,16 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/logouthijau"
-                    android:id="@+id/logout"
-                    android:onClick="logout"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/logout"
-                    android:textSize="30sp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/text"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:gravity="center_horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/addhijau"
-                    android:id="@+id/addkelas"
-                    android:onClick="addkelas"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add_class"
-                    android:textSize="30sp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/text"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:layout_marginLeft="50dp"
-                android:gravity="center_horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:src="@drawable/choosehijau"
                     android:id="@+id/pilihkelas"
-                    android:onClick="pilihkelas"/>
+                    android:onClick="pilihkelas"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/choose_class"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/text"/>
 

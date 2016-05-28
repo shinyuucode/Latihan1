@@ -17,4 +17,5 @@
     <string name="logout">Logout</string>
     <string name="add_class">Add Class</string>
     <string name="choose_class">Choose Class</string>
+    <string name="menu_dosen">Menu Dosen</string>
 </resources>
