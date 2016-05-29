@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="riksameidy.com.latihan_bareng1.MenuDosen">
+    tools:context="riksameidy.com.latihan_bareng1.DosenAwalMenu">
 
     <LinearLayout
         android:layout_width="match_parent"

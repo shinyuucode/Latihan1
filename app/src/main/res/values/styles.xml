@@ -9,4 +9,18 @@
 
     </style>
 
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar-->
+        <item name="android:searchButtonText">@color/text1</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor-->
+        <item name="android:textColor">@color/text</item>
+
+        <!-- Change hint text color for edit text-->
+        <item name="android:textColorHint">@color/text1</item>
+
+        <!-- Hint for edit text-->
+        <item name="android:hint">@string/search</item>
+    </style>
+
 </resources>

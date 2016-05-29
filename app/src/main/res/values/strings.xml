@@ -26,4 +26,8 @@
     <string name="namaDiEditProfil">Nama :</string>
     <string name="isinama">isiNama</string>
     <string name="submit">Submit</string>
+    <string name="kode_kelas">Kode Kelas</string>
+    <string name="jumlah_mahasiswa">Jumlah Mahasiswa</string>
+    <string name="search">Search</string>
+
 </resources>

@@ -19,11 +19,11 @@
         </activity>
         <activity android:name=".Login" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MenuDosen" />
-        <activity android:name=".EditProfil" />
-        <activity android:name=".AddKelas" />
-        <activity android:name=".PilihKelas" />
-        <activity android:name=".KelolaKelasDosen"></activity>
+        <activity android:name=".DosenAwalMenu" />
+        <activity android:name=".DosenEditProfil" />
+        <activity android:name=".DosenBuatKelas" />
+        <activity android:name=".DosenPilihKelas" />
+        <activity android:name=".DosenKelolaKelas"></activity>
     </application>
 
 </manifest>
