@@ -102,7 +102,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         if(result.equals("true")){
 
 
-            Intent intent = new Intent(context,MenuDosen.class);
+            Intent intent = new Intent(context,DosenAwalMenu.class);
             context.startActivity(intent);
 
 
