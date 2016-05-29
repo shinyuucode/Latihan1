@@ -1,8 +1,11 @@
 package riksameidy.com.latihan_bareng1;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
+import android.view.View;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -23,6 +26,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
     Context context;
     AlertDialog alertDialog;
+    DialogInterface.OnClickListener listener;
 
     public BackgroundWorker(Context context) {
         this.context = context;
@@ -87,13 +91,31 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPreExecute() {
-      alertDialog = new AlertDialog.Builder(context).create();
+        alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Login Status");
+
     }
 
     @Override
     protected void onPostExecute(String result) {
-        alertDialog.setMessage(result);
+
+        if(result.equals("true")){
+
+
+            Intent intent = new Intent(context,MenuDosen.class);
+            context.startActivity(intent);
+
+
+        }
+        else{
+
+        alertDialog.setMessage("Login Failed , Try Again!");
         alertDialog.show();
+
+        }
+
+
+
     }
+
 }
