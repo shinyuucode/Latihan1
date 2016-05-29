@@ -6,16 +6,16 @@ package riksameidy.com.latihan_bareng1;
 public class Dosen {
 
     private long nim;
-    private  String name,username,password;
+    private  String name,email,password;
     private Kelas[] kelas;
     private int jumlahKelas = 0;
     private final int MAX_KELAS = 10;
 
-    public Dosen(String name, long nim, String password, String username) {
+    public Dosen(String name, long nim, String password, String email) {
         this.name = name;
         this.nim = nim;
         this.password = password;
-        this.username = username;
+        this.email = email;
     }
 
     public Kelas getKelas(int n){
@@ -57,11 +57,11 @@ public class Dosen {
         this.password = password;
     }
 
-    public String getUsername() {
-        return username;
+    public String getemail() {
+        return email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setemail(String email) {
+        this.email = email;
     }
 }

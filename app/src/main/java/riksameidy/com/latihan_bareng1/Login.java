@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
-    final
+    private EditText nimnipTV,passwordTV;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +22,16 @@ public class Login extends AppCompatActivity {
 
     public void klikLogin(View view) {
 
-        Intent intent = new Intent(this,MenuDosen.class);
-        startActivity(intent);
-        finish();
-        return;
+        nimnipTV = (EditText) findViewById(R.id.nipDiLogin);
+        passwordTV = (EditText) findViewById(R.id.passwordDiLogin);
+
+        String nip = nimnipTV.getText().toString();
+        String password = passwordTV.getText().toString();
+        String type = "login";
+
+        BackgroundWorker b = new BackgroundWorker(this);
+        b.execute(type,nip,password);
+
 
 
     }
