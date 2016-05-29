@@ -18,4 +18,12 @@
     <string name="add_class">Add Class</string>
     <string name="choose_class">Choose Class</string>
     <string name="menu_dosen">Menu Dosen</string>
+    <string name="nomor_induk">Nomor Induk : </string>
+    <string name="isinomorinduk">isiNomorInduk</string>
+    <string name="isi_email">isiEmail</string>
+    <string name="emailDiEditProfil">Email :</string>
+    <string name="passwordDiEditProfil">Password :</string>
+    <string name="namaDiEditProfil">Nama :</string>
+    <string name="isinama">isiNama</string>
+    <string name="submit">Submit</string>
 </resources>
