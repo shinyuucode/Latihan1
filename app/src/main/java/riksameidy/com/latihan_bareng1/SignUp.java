@@ -79,7 +79,7 @@ public class SignUp extends AppCompatActivity {
 
     public void SignUp(View view) {
 
-        nipnimE = (EditText) findViewById(R.id.nipDiLogin);
+        nipnimE = (EditText) findViewById(R.id.nipDiSignup);
         namaE= (EditText) findViewById(R.id.namaDiSignup);
         passwordE = (EditText) findViewById(R.id.passwordDiSignup);
         emailE = (EditText) findViewById(R.id.emailDiSignup);
@@ -89,7 +89,7 @@ public class SignUp extends AppCompatActivity {
         nama = namaE.getText().toString();
         password = passwordE.getText().toString();
         email = emailE.getText().toString();
-        String type = "signup";
+        String type = "DOSEN";
         BWorker b = new BWorker(this);
 
         b.execute(type,nipnim,nama,password,email);
@@ -116,7 +116,7 @@ public class SignUp extends AppCompatActivity {
             url = "";
 
             if(type.equals("DOSEN")){
-                url = "";
+                url = "http://shinyuucode.honor.es/signupdosen.php";
             }
             else if(type.equals("MAHASISWA")){
                 url = "";
@@ -139,7 +139,7 @@ public class SignUp extends AppCompatActivity {
                                 "&" +
                                 URLEncoder.encode("password","UTF-8")+ "=" + URLEncoder.encode(password,"UTF-8")+
                                 "&" +
-                                URLEncoder.encode("email","UTF-8")+ "=" + URLEncoder.encode(nama,"UTF-8");
+                                URLEncoder.encode("email","UTF-8")+ "=" + URLEncoder.encode(email,"UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -172,10 +172,13 @@ public class SignUp extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            if(result.equals("Failed")){
-                Toast.makeText(context,"Sorry You are Ndut",Toast.LENGTH_LONG);
+            if(!result.equals("true")){
+                Toast.makeText(context,"Sorry You are Ndut",Toast.LENGTH_LONG).show();
+
+
             }
             else{
+                Toast.makeText(context,"Sign up Success Please Wait",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context,Login.class);
                 context.startActivity(intent);
             }
