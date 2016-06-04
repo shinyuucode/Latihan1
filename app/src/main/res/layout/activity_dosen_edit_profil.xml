@@ -28,6 +28,7 @@
                 android:text="@string/nomor_induk"
                 android:textSize="20sp"
                 android:textColor="@color/text"
+                android:ems="8"
                 />
 
             <TextView
@@ -35,8 +36,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/NomorIndukDiEditProfil"
                 android:text="@string/isinomorinduk"
+                android:textSize="20sp"
                 android:layout_marginLeft="-200dp"
-                android:textSize="20sp"/>
+                android:ems="8"/>
         </LinearLayout>
 
         <LinearLayout
@@ -52,6 +54,7 @@
                 android:text="@string/emailDiEditProfil"
                 android:textSize="20sp"
                 android:textColor="@color/text"
+                android:ems="8"
                 />
 
             <TextView
@@ -60,7 +63,8 @@
                 android:id="@+id/isiEmailDiEditProfil"
                 android:text="@string/isi_email"
                 android:layout_marginLeft="-200dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:ems="8"/>
         </LinearLayout>
 
         <LinearLayout
@@ -76,6 +80,7 @@
                 android:text="@string/namaDiEditProfil"
                 android:textSize="20sp"
                 android:textColor="@color/text"
+                android:ems="8"
                 />
 
             <EditText
@@ -83,7 +88,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/isiNama"
                 android:layout_marginLeft="-200dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:ems="8"/>
         </LinearLayout>
 
         <LinearLayout
@@ -99,6 +105,7 @@
                 android:text="@string/passwordDiEditProfil"
                 android:textSize="20sp"
                 android:textColor="@color/text"
+                android:ems="8"
                 />
 
             <EditText
@@ -106,7 +113,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/isiPasswordDiEditProfil"
                 android:layout_marginLeft="-200dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:ems="8"/>
         </LinearLayout>
 
         <Button
@@ -114,9 +122,10 @@
             android:layout_height="wrap_content"
             android:text="@string/submit"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
-            android:layout_marginBottom="50dp"
-            android:layout_weight="0.1"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="0.1"
+            android:onClick="submitEditProfil"/>
 
     </LinearLayout>
 

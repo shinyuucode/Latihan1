@@ -14,16 +14,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbarCariMatkul"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/background"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-             />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cari_mahasiswa_dari_nim"
+                android:ems="11"
+                android:id="@+id/cariMhsDiDosenBuatKelas"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/btnCariMhsDiDosenBuatKelas"
+                android:onClick="CariMhsDiDosenBuatKelas"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nimmahasiswa"
+            android:id="@+id/nimMhsBerhasilDicariDiDosenBuatKelas"
+            android:textSize="18sp"/>
 
         <EditText
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/kode_kelas"
