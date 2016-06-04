@@ -22,11 +22,6 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
              />
 
-        <com.search.material.library.MaterialSearchView
-            android:id="@+id/search_view"
-            style="@style/MaterialSearchViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <EditText
             android:layout_width="match_parent"

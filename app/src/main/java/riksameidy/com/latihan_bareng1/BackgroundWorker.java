@@ -27,6 +27,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     Context context;
     AlertDialog alertDialog;
     DialogInterface.OnClickListener listener;
+    String usernametoPass;
 
     public BackgroundWorker(Context context) {
         this.context = context;
@@ -71,6 +72,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                 inputStream.close();
                 httpURLConnection.disconnect();
 
+                usernametoPass = nip;
                 return result;
 
 
@@ -102,6 +104,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
         if(result.equals("true")){
             Intent intent = new Intent(context,DosenAwalMenu.class);
+            intent.putExtra("NIP",usernametoPass);
             context.startActivity(intent);
         }
         else{

@@ -7,10 +7,14 @@ import android.view.View;
 
 public class DosenAwalMenu extends AppCompatActivity {
 
+    private String nip;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dosen_awal_menu);
+        Intent intent = getIntent();
+        nip = intent.getExtras().getString("NIP");
     }
 
     public void editprofil(View view) {
@@ -26,7 +30,9 @@ public class DosenAwalMenu extends AppCompatActivity {
     }
 
     public void addkelas(View view) {
-
+        Intent intent = new Intent(this,DosenBuatKelas.class);
+        intent.putExtra("NIP",nip);
+        startActivity(intent);
     }
 
     public void pilihkelas(View view) {
