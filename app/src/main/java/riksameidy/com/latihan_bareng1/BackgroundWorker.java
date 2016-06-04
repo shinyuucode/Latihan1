@@ -37,6 +37,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         String type  = params[0];
 
         String loginURL = "http://shinyuucode.honor.es/login.php";
+        String signupURL = "";
 
         if(type.equals("login")){
             try {
@@ -100,22 +101,14 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
 
         if(result.equals("true")){
-
-
             Intent intent = new Intent(context,DosenAwalMenu.class);
             context.startActivity(intent);
-
-
         }
         else{
-
         alertDialog.setMessage("Login Failed , Try Again!");
         alertDialog.show();
 
         }
-
-
-
     }
 
 }

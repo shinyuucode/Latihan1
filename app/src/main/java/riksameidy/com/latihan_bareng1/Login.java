@@ -1,11 +1,19 @@
 package riksameidy.com.latihan_bareng1;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class Login extends AppCompatActivity {
 
@@ -44,4 +52,6 @@ public class Login extends AppCompatActivity {
         return;
 
     }
+
+
 }
