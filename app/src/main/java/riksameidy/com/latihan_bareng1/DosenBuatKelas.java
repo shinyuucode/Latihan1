@@ -110,7 +110,8 @@ public class DosenBuatKelas extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             Toast.makeText(context,result,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(context,Login.class);
+            Intent intent = new Intent(context,DosenAwalMenu.class);
+            intent.putExtra("NIP",nips);
             context.startActivity(intent);
         }
 
