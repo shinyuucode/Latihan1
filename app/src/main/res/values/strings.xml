@@ -28,7 +28,28 @@
     <string name="isinama">isiNama</string>
     <string name="submit">Submit</string>
     <string name="kode_kelas">Kode Kelas</string>
-    <string name="jumlah_mahasiswa">Jumlah Mahasiswa</string>
+    <string name="jumlah_mahasiswa">Jumlah Mahasiswa:</string>
     <string name="search">Search</string>
+    <string name="isinamakelas">IsiNamaKelas</string>
+    <string name="matakuliah">Mata Kuliah:</string>
+    <string name="sks_mata_kuliah">SKS Mata Kuliah:</string>
+    <string name="isisksmatakuliah">IsiSKSMataKuliah</string>
+    <string name="isijumlahmhs">IsiJumlahMhs</string>
+    <string name="jumlah_tugas">Jumlah Tugas:</string>
+    <string name="isimatakuliah">IsiMataKuliah</string>
+    <string name="isijumlahtugas">IsiJumlahTugas</string>
+    <string name="jumlah_kelompok">Jumlah Kelompok:</string>
+    <string name="isijumlahkelompok">IsiJumlahKelompok</string>
+    <string name="hapus_kelas">Hapus Kelas</string>
+    <string name="pilih_kelas">Pilih Kelas</string>
+    <string name="cari_mahasiswa_dari_nim">Cari Mahasiswa dari NIM</string>
+    <string name="nimmahasiswa">NIMmahasiswa</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="daftar_mahasiswa">Daftar Mahasiswa</string>
+    <string name="tambah_kelompok_baru">Tambah Kelompok Baru</string>
+    <string name="nomor_kelompok">Nomor Kelompok</string>
+    <string name="nim">NIM</string>
+    <string name="set_ketua">Set Ketua</string>
 
 </resources>

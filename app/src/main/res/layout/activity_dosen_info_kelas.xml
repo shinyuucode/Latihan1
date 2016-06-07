@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="riksameidy.com.latihan_bareng1.DosenInfoKelas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/isinamakelas"
+            android:id="@+id/isiNamaKelas"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matakuliah"
+                android:id="@+id/MataKuliah"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isiMataKuliah"
+                android:text="@string/isimatakuliah"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:ems="8"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sks_mata_kuliah"
+                android:id="@+id/sksMataKuliah"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isiSKSMataKuliah"
+                android:text="@string/isisksmatakuliah"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:ems="8"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_mahasiswa"
+                android:id="@+id/jumlahMhsDiInfoKelas"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isiJumlahMhs"
+                android:text="@string/isijumlahmhs"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:ems="8"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_tugas"
+                android:id="@+id/jumlahTugas"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isiJumlahTugas"
+                android:text="@string/isijumlahtugas"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:ems="8"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_kelompok"
+                android:id="@+id/jumlahKelompok"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isiJumlahKelompok"
+                android:text="@string/isijumlahkelompok"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:ems="8"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hapus_kelas"
+            android:onClick="hapusKelas"
+            android:id="@+id/hapusKelas"
+            android:layout_gravity="center"
+            android:textColor="@color/text"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -10,54 +10,29 @@
     tools:context="riksameidy.com.latihan_bareng1.DosenKelolaKelas">
 
 
-    <TabHost
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/tabHost"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <LinearLayout
+        <application
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></TabWidget>
-
-            <FrameLayout
-                android:id="@android:id/tabcontent"
+            android:allowBackup="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo" >
+            <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:id="@+id/InfoKelas"
+                <intent-filter
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
+                    android:layout_height="match_parent">
+                    <action android:name="android.intent.action.MAIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
 
-                <LinearLayout
-                    android:id="@+id/KelolaMahasiswa"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
+                    <category android:name="android.intent.category.LAUNCHER"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </intent-filter>
+            </activity>
+        </application>
 
-                <LinearLayout
-                    android:id="@+id/KelolaTugas"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/KelolaKelompok"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
-
-            </FrameLayout>
-        </LinearLayout>
-    </TabHost>
 </RelativeLayout>
