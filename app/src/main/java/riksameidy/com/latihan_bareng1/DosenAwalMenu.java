@@ -36,6 +36,8 @@ public class DosenAwalMenu extends AppCompatActivity {
     }
 
     public void pilihkelas(View view) {
+        Intent intent = new Intent(this,DosenPilihKelas.class);
+        startActivity(intent);
 
     }
 
