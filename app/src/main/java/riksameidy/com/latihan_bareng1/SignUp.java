@@ -128,7 +128,6 @@ public class SignUp extends AppCompatActivity {
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
-                httpURLConnection.disconnect();
 
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
@@ -146,7 +145,20 @@ public class SignUp extends AppCompatActivity {
                 bufferedWriter.close();
                 outputStream.close();
 
-                return "success";
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+                bufferedReader.close();
+                inputStream.close();
+
+
+                httpURLConnection.disconnect();
+                return result;
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();

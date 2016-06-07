@@ -70,7 +70,6 @@ public class DosenBuatKelas extends AppCompatActivity {
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoInput(true);
                 httpURLConnection.setDoOutput(true);
-                httpURLConnection.connect();
 
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
@@ -87,19 +86,16 @@ public class DosenBuatKelas extends AppCompatActivity {
 
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
-
-                StringBuilder sb = new StringBuilder();
-                String line = "";
-
-                while((line = bufferedReader.readLine())!=null){
-                    sb.append(line);
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!= null){
+                    result+=line;
                 }
                 bufferedReader.close();
                 inputStream.close();
 
                 httpURLConnection.disconnect();
-
-                return sb.toString();
+                return result;
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
