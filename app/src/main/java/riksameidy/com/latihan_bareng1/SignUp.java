@@ -128,6 +128,7 @@ public class SignUp extends AppCompatActivity {
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
+                httpURLConnection.disconnect();
 
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
@@ -145,20 +146,7 @@ public class SignUp extends AppCompatActivity {
                 bufferedWriter.close();
                 outputStream.close();
 
-                InputStream inputStream = httpURLConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
-
-                StringBuilder sb = new StringBuilder();
-                String line = "";
-
-                while((line = bufferedReader.readLine())!=null){
-                    sb.append(line);
-                }
-                bufferedReader.close();
-                inputStream.close();
-                httpURLConnection.disconnect();
-
-                return sb.toString();
+                return "success";
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
@@ -179,7 +167,7 @@ public class SignUp extends AppCompatActivity {
             }
             else{
                 Toast.makeText(context,"Sign up Success Please Wait",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(context,Login.class);
+                Intent intent = new Intent(context.getApplicationContext(),Login.class);
                 context.startActivity(intent);
             }
         }
